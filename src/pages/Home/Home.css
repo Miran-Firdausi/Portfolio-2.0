@@ -1,0 +1,17 @@
+.home-page {
+  height: calc(100vh - 60px);
+  background-color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text-color);
+}
+
+.hero-section {
+  font-size: 2rem;
+}
+
+.hero-section__first-name {
+  color: #f47729;
+  font-weight: 600;
+}
