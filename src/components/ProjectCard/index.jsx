@@ -5,7 +5,9 @@ function ProjectCard({ projectImage, projectTitle, projectDescription }) {
   return (
     <div
       className="project-card"
-      style={{ backgroundImage: `url('${projectImage}')` }}
+      style={{
+        backgroundImage: `url('${window.location.origin}/Simple-Portfolio/${projectImage}')`,
+      }}
     >
       <div className="project-card__about-project">
         <h3>{projectTitle}</h3>
