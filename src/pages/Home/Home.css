@@ -71,31 +71,34 @@
   /* text-transform: uppercase; */
 }
 
-.about-section__details {
-  margin-top: 120px;
-}
-
 .about-section__subheading {
-  font-size: 1.25rem;
+  margin-top: 2em;
+}
+
+.about-section__education-container,
+.about-section__achievements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.about-section__education-item,
+.about-section__achievement-item {
+  width: 720px;
+  padding: 2em 1em;
+  background-color: #272727;
+  border-radius: 0.5em;
+  margin: auto;
+}
+
+.about-section__education-item strong {
   font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
-.about-section__education-list,
-.about-section__achievements-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.about-section__education-list li,
-.about-section__achievements-list li {
-  margin-bottom: 8px;
-  font-size: 1rem;
-}
-
-.about-section__education-list li strong,
-.about-section__achievements-list li strong {
-  font-weight: 700;
+.about-section__education-item p {
+  color: #999;
 }
 
 .projects-container {

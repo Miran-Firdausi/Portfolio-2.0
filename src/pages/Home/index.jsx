@@ -143,28 +143,38 @@ function Home() {
             </p>
             <div className="about-section__details">
               <h3 className="about-section__subheading">Education</h3>
-              <ul className="about-section__education-list">
-                <li>
-                  <strong>
-                    Bachelor of Technology (B.Tech) in Computer Science &
-                    Engineering
-                  </strong>
-                  <br />
-                  Symbiosis Institute of Technology, Pune (2022-2026)
-                </li>
-                <li>
-                  <strong>Matriculation and Intermediate</strong>
-                  <br />
-                  Loyola High School, Patna (Graduated in 2022)
-                </li>
-              </ul>
+              <div className="about-section__education-container">
+                <div className="about-section__education-item">
+                  <div>
+                    <strong>
+                      Bachelor of Technology (B.Tech) in Computer Science &
+                      Engineering
+                    </strong>
+                    <br />
+                    <p>Symbiosis Institute of Technology, Pune (2022-2026)</p>
+                  </div>
+                </div>
+                <div className="about-section__education-item">
+                  <div>
+                    <strong>Matriculation & Intermediate</strong>
+                    <br />
+                    <p>Loyola High School, Patna (Graduated in 2022)</p>
+                  </div>
+                </div>
+              </div>
 
               <h3 className="about-section__subheading">Achievements</h3>
-              <ul className="about-section__achievements-list">
-                <li>Bajaj HackRX5.0 Best Innovation Award Winner</li>
-                <li>FOSS Hack 2024 Winner</li>
-                <li>GDSC Web Weave Challenge Winner</li>
-              </ul>
+              <div className="about-section__achievements-container">
+                <div className="about-section__achievement-item">
+                  <p>Bajaj HackRX5.0 Best Innovation Award Winner</p>
+                </div>
+                <div className="about-section__achievement-item">
+                  <p>FOSS Hack 2024 Winner</p>
+                </div>
+                <div className="about-section__achievement-item">
+                  <p>GDSC Web Weave Challenge Winner</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
