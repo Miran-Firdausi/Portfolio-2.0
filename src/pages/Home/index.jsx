@@ -131,7 +131,10 @@ function Home() {
         >
           <div className="about-section__content">
             <h2 className="about-section__heading">About Me</h2>
-            <img className="about-section__image" src="/Miran-Portfolio.jpg" />
+            <img
+              className="about-section__image"
+              src={`${window.location.origin}/Simple-Portfolio/Miran-Portfolio.jpg`}
+            />
             <p ref={paragraphRef} className="about-section__description">
               I am a computer science enthusiast. I like learning new skills and
               staying up to date on the latest technological trends. I am
