@@ -1,17 +1,220 @@
 .home-page {
-  height: calc(100vh - 60px);
-  background-color: #272727;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #141311;
   color: var(--primary-text-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .hero-section {
   font-size: 2rem;
+  background-image: url("/dark-bg.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section__title {
+  font-weight: 600;
+  font-size: 1.6em;
 }
 
 .hero-section__first-name {
   color: #f47729;
+  font-weight: 800;
+}
+
+.hero-section__description {
+  display: flex;
+}
+
+.hero-section__description--emphasis {
+  color: #f47729;
+}
+
+.about-section,
+.project-section,
+.contact-section {
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 100px;
+}
+.about-section__content {
+  width: 80vw;
+  margin: auto;
+}
+
+.about-section__heading,
+.project-section__heading,
+.contact-section__heading {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.about-section__image {
+  border-radius: 50%;
+  margin-bottom: 2em;
+  height: 200px;
+}
+
+.about-section__description {
+  /* margin-bottom: 1em; */
+  font-size: 1.6rem;
+  /* text-transform: uppercase; */
+}
+
+.about-section__details {
+  margin-top: 120px;
+}
+
+.about-section__subheading {
+  font-size: 1.25rem;
   font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-section__education-list,
+.about-section__achievements-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section__education-list li,
+.about-section__achievements-list li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.about-section__education-list li strong,
+.about-section__achievements-list li strong {
+  font-weight: 700;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-bottom: 100px;
+}
+
+.contact-section {
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 100px;
+  background-color: #1a1a1a;
+}
+
+.contact-section__heading {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #f47729;
+}
+
+.contact-section__form-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+  background: #232323;
+  border-radius: 1em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1rem;
+  border: 2px solid #333;
+  border-radius: 0.5em;
+  background-color: #141311;
+  color: #f1f1f1;
+  outline: none;
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+  color: #999;
+}
+
+.contact-form__button {
+  padding: 0.8em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #f47729;
+  color: #fff;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form__button:hover {
+  background-color: #d9691d;
+}
+
+.feedback-message {
+  margin-top: 1em;
+  font-size: 1.1rem;
+  color: #4caf50; /* Success color */
+  text-align: center;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-section__title,
+.hero-section__description,
+.about-section__heading,
+.project-section__heading,
+.contact-section__heading {
+  animation: fadeInUp 1s ease both;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.contact-form__input:hover,
+.contact-form__textarea:hover {
+  border-color: #f47729;
+  background-color: #1c1c1c;
+}
+
+.contact-form__button {
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.contact-form__button:hover {
+  transform: translateY(-3px);
+  background-color: #d9691d;
+}
+
+.feedback-message {
+  animation: fadeInOut 2s ease;
 }
