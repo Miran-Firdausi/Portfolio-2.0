@@ -114,7 +114,7 @@ function Home() {
                 options={{
                   strings: [
                     "Full-stack Developer",
-                    "Web Desginer",
+                    "Web Designer",
                     "Blockchain Developer",
                   ],
                   autoStart: true,
